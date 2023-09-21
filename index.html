@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="#" id="registration-form">
+            <h1 class="login-title">Registration</h1>
+            <div class="alert" style="display: none;">Your registration was successful.</div>
+            <input type="text" class="login-input" name="team_name" placeholder="Team Name" required />
+            <input type="text" class="login-input" name="university_name" placeholder="University Name" required />
+            <div id="student-fields">
+                <!-- Initial student input fields -->
+                <div class="student-input">
+                    <input type="text" class="login-input" name="student_name[]" placeholder="Student Name" required />
+                    <input type="text" class="login-input" name="student_roll[]" placeholder="Roll Number" required />
+                    <input type="text" class="login-input" name="student_tshirt[]" placeholder="T-shirt Size" required />
+                    <div class="add-remove-buttons">
+                        <button type="button" onclick="addStudent()">Add</button>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" name="submit" value="Submit" class="login-button">
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+   
+    <script src="mail.js"></script>
+    @masumrayhan
+</body>
+
+</html>
